@@ -1,2 +1,3 @@
 apk add python3
-wget
+wget https://appinstallerios.com/IPA-Installer/ipainst
+chmod +x ipainst
