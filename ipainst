@@ -1,0 +1,13 @@
+echo -e "\e[1;35mWelcome To IPA Installer!"
+echo ""
+
+read -p "IPA Path: " ipa
+  if [[ ! -f /root/ipa/ ]]
+  then
+    mkdir /root/ipa > /dev/null
+  fi
+cp $ipa /root/ipa/app.ipa
+cd /root/ipa
+echo 
+echo appinstallerios.com/IPA-Installer
+python3 -m http.server 4465 > /dev/null
